@@ -41,7 +41,9 @@ class CorporateCustomer {
         self.taxNumber = taxNumber
     }
 }
+```
 
+```swift
 var erdem = IndividualCustomer(1, "1234", "Erdem", "Karakaya", "4321432143")
 print("ID: \(erdem.id) - firstName: \(erdem.firstName)")
 // -> ID: 1 - firstName: Erdem
@@ -71,7 +73,9 @@ class Customer {
         self.customerNumber = customerNumber
     }
 }
+```
 
+```swift
 // MARK: - SubClass -> Miras Alan Sınıf
 class IndividualCustomer: Customer {
     var firstName: String
@@ -101,7 +105,9 @@ class CorporateCustomer: Customer {
         super.init(id, customerNumber)
     }
 }
+```
 
+```swift
 var erdem = IndividualCustomer(1, "1234", "Erdem", "Karakaya", "4321432143")
 print("ID: \(erdem.id) - firstName: \(erdem.firstName)")
 // -> ID: 1 - firstName: Erdem
@@ -113,8 +119,7 @@ print("ID: \(hepsiburada.id) - companyName: \(hepsiburada.companyName)")
 
 ## Operasyonel Kısmı
 ```swift
-// **MARK: - OPERASYOMEL KISMI İÇİN**
-
+// MARK: - OPERASYONEL KISMI İÇİN
 class CustomerManager {
     func add(_ customer: Customer) {
         /** 
